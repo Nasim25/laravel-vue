@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+
+Route::get('deshboard','Admin\DashboardController@index')->name('deshboard');
